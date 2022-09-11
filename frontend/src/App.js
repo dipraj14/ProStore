@@ -1,22 +1,22 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import Header from './component/Header';
-import Footer from './component/Footer'
+import Footer from './component/Footer';
+import HomeScreen from './screens/HomeScreen';
 const App = () => {
   return (
-    <div className="App">
+    <div className='App'>
       <>
         <Header />
-          <main className = 'py-3'> 
-            <Container>
-              <h1>Welcome To ProStore</h1>
-            </Container>
-          </main>
+        <main className='py-3'>
+          <Container>
+            <HomeScreen />
+          </Container>
+        </main>
         <Footer />
       </>
-
     </div>
   );
-}
+};
 
 export default App;
